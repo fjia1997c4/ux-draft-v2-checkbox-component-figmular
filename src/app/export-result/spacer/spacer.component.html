@@ -1,0 +1,278 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_directionVerticalSizePx4: direction === 'Vertical' && sizePx === '4',
+    root_directionVerticalSizePx8: direction === 'Vertical' && sizePx === '8',
+    root_directionVerticalSizePx10: direction === 'Vertical' && sizePx === '10',
+    root_directionVerticalSizePx12: direction === 'Vertical' && sizePx === '12',
+    root_directionVerticalSizePx16: direction === 'Vertical' && sizePx === '16',
+    root_directionVerticalSizePx20: direction === 'Vertical' && sizePx === '20',
+    root_directionVerticalSizePx24: direction === 'Vertical' && sizePx === '24',
+    root_sizePx32DirectionHorizontalSizePx4DirectionHorizontalSizePx8DirectionHorizontalSizePx12DirectionHorizontalSizePx16DirectionHorizontalSizePx20DirectionHorizontalSizePx24DirectionHorizontalSizePx40DirectionHorizontalSizePxCustom:
+      sizePx === '32' ||
+      (direction === 'Horizontal' && sizePx === '4') ||
+      (direction === 'Horizontal' && sizePx === '8') ||
+      (direction === 'Horizontal' && sizePx === '12') ||
+      (direction === 'Horizontal' && sizePx === '16') ||
+      (direction === 'Horizontal' && sizePx === '20') ||
+      (direction === 'Horizontal' && sizePx === '24') ||
+      (direction === 'Horizontal' && sizePx === '40') ||
+      (direction === 'Horizontal' && sizePx === 'Custom'),
+    root_directionVerticalSizePx40SizePxCustom:
+      direction === 'Vertical' && (sizePx === '40' || sizePx === 'Custom'),
+    root_directionVerticalSizePx8SizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom:
+      direction === 'Vertical' &&
+      (sizePx === '8' ||
+        sizePx === '10' ||
+        sizePx === '12' ||
+        sizePx === '16' ||
+        sizePx === '20' ||
+        sizePx === '24' ||
+        sizePx === '32' ||
+        sizePx === '40' ||
+        sizePx === 'Custom'),
+    root_directionVertical: direction === 'Vertical',
+    root_directionHorizontalSizePx4SizePx8SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom:
+      direction === 'Horizontal' &&
+      (sizePx === '4' ||
+        sizePx === '8' ||
+        sizePx === '12' ||
+        sizePx === '16' ||
+        sizePx === '20' ||
+        sizePx === '24' ||
+        sizePx === '32' ||
+        sizePx === '40' ||
+        sizePx === 'Custom'),
+  }"
+>
+  <div
+    class="redlineVertical"
+    [ngClass]="{
+      redlineVertical_directionVertical: direction === 'Vertical',
+      redlineVertical_directionHorizontalSizePx4SizePx8SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom:
+        direction === 'Horizontal' &&
+        (sizePx === '4' ||
+          sizePx === '8' ||
+          sizePx === '12' ||
+          sizePx === '16' ||
+          sizePx === '20' ||
+          sizePx === '24' ||
+          sizePx === '32' ||
+          sizePx === '40' ||
+          sizePx === 'Custom'),
+    }"
+  >
+    <div class="horizontalLineTop">
+      <svg
+        width="5"
+        height="1"
+        viewBox="0 0 5 1"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" width="4" height="1" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '4'" class="redline">
+      <svg
+        width="1"
+        height="2"
+        viewBox="0 0 1 2"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="1" height="2" fill="#D70000" />
+      </svg>
+    </div>
+    <div
+      class="horizontalLineBottom horizontalLineBottom_1"
+      [ngClass]="{
+        horizontalLineBottom_directionHorizontalSizePx8:
+          direction === 'Horizontal' && sizePx === '8',
+        horizontalLineBottom_directionVerticalSizePx10:
+          direction === 'Vertical' && sizePx === '10',
+        horizontalLineBottom_sizePx12: sizePx === '12',
+        horizontalLineBottom_sizePx16: sizePx === '16',
+        horizontalLineBottom_sizePx20: sizePx === '20',
+        horizontalLineBottom_sizePx24: sizePx === '24',
+        horizontalLineBottom_sizePx32: sizePx === '32',
+        horizontalLineBottom_sizePx40SizePxCustom:
+          sizePx === '40' || sizePx === 'Custom',
+        horizontalLineBottom_directionVerticalSizePx8:
+          direction === 'Vertical' && sizePx === '8',
+      }"
+    >
+      <svg
+        width="5"
+        height="1"
+        viewBox="0 0 5 1"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" width="4" height="1" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="direction === 'Vertical' && sizePx === '8'" class="redline">
+      <svg
+        width="2"
+        height="6"
+        viewBox="0 0 2 6"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.5"
+          y="-0.00012207"
+          width="1"
+          height="6.0002"
+          fill="#D70000"
+        />
+      </svg>
+    </div>
+    <div *ngIf="direction === 'Vertical' && sizePx === '10'" class="redline">
+      <svg
+        width="2"
+        height="8"
+        viewBox="0 0 2 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" width="1" height="8" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '12'" class="redline">
+      <svg
+        width="1"
+        height="10"
+        viewBox="0 0 1 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="1" height="10" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '16'" class="redline">
+      <svg
+        width="2"
+        height="14"
+        viewBox="0 0 2 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" width="1" height="14" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '20'" class="redline">
+      <svg
+        width="1"
+        height="18"
+        viewBox="0 0 1 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="1" height="18" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '24'" class="redline">
+      <svg
+        width="1"
+        height="22"
+        viewBox="0 0 1 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="1" height="22" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '32'" class="redline">
+      <svg
+        width="2"
+        height="30"
+        viewBox="0 0 2 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0.5" width="1" height="30" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="sizePx === '40' || sizePx === 'Custom'" class="redline">
+      <svg
+        width="1"
+        height="38"
+        viewBox="0 0 1 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="1" height="38" fill="#D70000" />
+      </svg>
+    </div>
+    <div *ngIf="direction === 'Horizontal' && sizePx === '8'" class="redline">
+      <svg
+        width="6"
+        height="2"
+        viewBox="0 0 6 2"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          y="1.5"
+          width="1"
+          height="6"
+          transform="rotate(-90 0 1.5)"
+          fill="#D70000"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="text text_2"
+    [ngClass]="{
+      text_sizePx8DirectionVerticalSizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom:
+        sizePx === '8' ||
+        (direction === 'Vertical' && sizePx === '10') ||
+        sizePx === '12' ||
+        sizePx === '16' ||
+        sizePx === '20' ||
+        sizePx === '24' ||
+        sizePx === '32' ||
+        sizePx === '40' ||
+        sizePx === 'Custom',
+    }"
+  >
+    <span
+      class="px px_1"
+      [ngClass]="{
+        px_directionHorizontalSizePx4:
+          direction === 'Horizontal' && sizePx === '4',
+        px_directionVerticalSizePx4: direction === 'Vertical' && sizePx === '4',
+        px_sizePx8DirectionVerticalSizePx10SizePx12DirectionHorizontalSizePx16DirectionHorizontalSizePx20DirectionHorizontalSizePx24DirectionHorizontalSizePx32DirectionHorizontalSizePx40:
+          sizePx === '8' ||
+          (direction === 'Vertical' && sizePx === '10') ||
+          sizePx === '12' ||
+          (direction === 'Horizontal' && sizePx === '16') ||
+          (direction === 'Horizontal' && sizePx === '20') ||
+          (direction === 'Horizontal' && sizePx === '24') ||
+          (direction === 'Horizontal' && sizePx === '32') ||
+          (direction === 'Horizontal' && sizePx === '40'),
+        px_directionVerticalSizePx16DirectionVerticalSizePx20DirectionVerticalSizePx24DirectionVerticalSizePx32DirectionVerticalSizePx40SizePxCustom:
+          (direction === 'Vertical' && sizePx === '16') ||
+          (direction === 'Vertical' && sizePx === '20') ||
+          (direction === 'Vertical' && sizePx === '24') ||
+          (direction === 'Vertical' && sizePx === '32') ||
+          (direction === 'Vertical' && sizePx === '40') ||
+          sizePx === 'Custom',
+        px_sizePx8DirectionVerticalSizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom:
+          sizePx === '8' ||
+          (direction === 'Vertical' && sizePx === '10') ||
+          sizePx === '12' ||
+          sizePx === '16' ||
+          sizePx === '20' ||
+          sizePx === '24' ||
+          sizePx === '32' ||
+          sizePx === '40' ||
+          sizePx === 'Custom',
+      }"
+      >{{ sizePx }}</span
+    >
+  </div>
+</div>

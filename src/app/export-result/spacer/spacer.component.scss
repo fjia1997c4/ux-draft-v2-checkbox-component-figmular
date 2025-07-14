@@ -1,0 +1,231 @@
+@import "src/app/tokens.scss";
+
+.root {
+  box-sizing: border-box;
+  border-color: #d70000;
+  border-style: solid;
+  border-width: 0.25px;
+  background: #d7000026;
+}
+
+.root_directionVerticalSizePx4 {
+  height: 4px;
+}
+
+.root_directionVerticalSizePx8 {
+  height: 8px;
+}
+
+.root_directionVerticalSizePx10 {
+  height: 10px;
+}
+
+.root_directionVerticalSizePx12 {
+  height: 12px;
+}
+
+.root_directionVerticalSizePx16 {
+  height: 16px;
+}
+
+.root_directionVerticalSizePx20 {
+  height: 20px;
+}
+
+.root_directionVerticalSizePx24 {
+  height: 24px;
+}
+
+.root_sizePx32DirectionHorizontalSizePx4DirectionHorizontalSizePx8DirectionHorizontalSizePx12DirectionHorizontalSizePx16DirectionHorizontalSizePx20DirectionHorizontalSizePx24DirectionHorizontalSizePx40DirectionHorizontalSizePxCustom {
+  height: 32px;
+}
+
+.root_directionVerticalSizePx40SizePxCustom {
+  height: 40px;
+}
+
+.root_directionVerticalSizePx8SizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom {
+  width: -webkit-fill-available;
+}
+
+.root_directionVertical {
+  display: flex;
+  flex-direction: row;
+}
+
+.root_directionHorizontalSizePx4SizePx8SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom {
+  display: flex;
+  flex-direction: column;
+}
+.redlineVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  box-sizing: border-box;
+}
+
+.redlineVertical_directionVertical {
+  height: 100%;
+}
+
+.redlineVertical_directionHorizontalSizePx4SizePx8SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom {
+  width: -webkit-fill-available;
+}
+.horizontalLineTop {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.horizontalLineBottom {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.horizontalLineBottom_1 {
+  display: flex;
+}
+
+.horizontalLineBottom_directionHorizontalSizePx8 {
+  display: flex;
+}
+
+.horizontalLineBottom_directionVerticalSizePx10 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx12 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx16 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx20 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx24 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx32 {
+  display: flex;
+}
+
+.horizontalLineBottom_sizePx40SizePxCustom {
+  display: flex;
+}
+
+.horizontalLineBottom_directionVerticalSizePx8 {
+  display: flex;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.redline {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.text {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.text_sizePx8DirectionVerticalSizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom {
+  padding-top: 0px;
+}
+
+.text_2 {
+  padding-top: 1px;
+}
+.px {
+  display: flex;
+  box-sizing: content-box;
+  color: #d70000;
+  font-family: Arial;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.px_1 {
+  line-height: 4px;
+}
+
+.px_directionHorizontalSizePx4 {
+  font-size: 3px;
+}
+
+.px_directionVerticalSizePx4 {
+  font-size: 4px;
+}
+
+.px_sizePx8DirectionVerticalSizePx10SizePx12DirectionHorizontalSizePx16DirectionHorizontalSizePx20DirectionHorizontalSizePx24DirectionHorizontalSizePx32DirectionHorizontalSizePx40 {
+  font-size: 6px;
+}
+
+.px_directionVerticalSizePx16DirectionVerticalSizePx20DirectionVerticalSizePx24DirectionVerticalSizePx32DirectionVerticalSizePx40SizePxCustom {
+  font-size: 8px;
+}
+
+.px_sizePx8DirectionVerticalSizePx10SizePx12SizePx16SizePx20SizePx24SizePx32SizePx40SizePxCustom {
+  line-height: 8px;
+}

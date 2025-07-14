@@ -1,0 +1,51 @@
+@import "src/app/tokens.scss";
+
+.x--focus-indicator_9777-13009 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.inner-black-ring_9777-13010 {
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 1px;
+  border-color: $semantic-color-names-borders-border-focus-indicator;
+  border-style: solid;
+  border-width: 2px;
+  width: 181px;
+  height: 57px;
+}
+
+.middle-white-ring_9777-13011 {
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+  border-color: $semantic-color-names-backgrounds-bg-quaternary;
+  border-style: solid;
+  border-width: 2px;
+  width: 185px;
+  height: 61px;
+}
+
+.outer-black-ring_9777-13012 {
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+  border-color: $semantic-color-names-borders-border-focus-indicator;
+  border-style: solid;
+  border-width: 2px;
+  width: 185px;
+  height: 61px;
+}

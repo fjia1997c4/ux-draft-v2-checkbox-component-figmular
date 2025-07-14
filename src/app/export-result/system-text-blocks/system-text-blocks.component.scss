@@ -1,0 +1,66 @@
+@import "src/app/tokens.scss";
+
+.root {
+  box-sizing: border-box;
+}
+
+.root_typeLogo {
+  position: relative;
+  width: 146px;
+}
+
+.root_typeSubheaderTypeTitleTypeHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: hidden;
+}
+.memoriselyLogoLg1 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.memorisely {
+  top: 8px;
+  left: 54px;
+  position: absolute;
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+  width: 92px;
+  height: 24px;
+}
+
+.subHeader {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.title {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+}

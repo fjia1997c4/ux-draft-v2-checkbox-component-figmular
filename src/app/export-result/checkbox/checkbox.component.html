@@ -1,0 +1,32 @@
+<div
+  class="root"
+  [ngClass]="{
+    root_stateActive: state === 'Active',
+    root_stateDefaultStateHoverStateFocusStateInactiveStateErrorFocus:
+      state === 'Default' ||
+      state === 'Hover' ||
+      state === 'Focus' ||
+      state === 'Inactive' ||
+      state === 'ErrorFocus',
+    root_stateFocus: state === 'Focus',
+    root_stateErrorFocus: state === 'ErrorFocus',
+    root_stateDefaultStateHoverStateFocusStateErrorFocus:
+      state === 'Default' ||
+      state === 'Hover' ||
+      state === 'Focus' ||
+      state === 'ErrorFocus',
+    root_stateInactive: state === 'Inactive',
+    root_stateHoverStateFocusStateInactiveStateErrorFocus:
+      state === 'Hover' ||
+      state === 'Focus' ||
+      state === 'Inactive' ||
+      state === 'ErrorFocus',
+    root_stateDefault: state === 'Default',
+    root_stateHoverStateFocus: state === 'Hover' || state === 'Focus',
+  }"
+>
+  <app-feather-icons-check
+    *ngIf="state === 'Active'"
+    class="featherIconsCheck"
+  ></app-feather-icons-check>
+</div>

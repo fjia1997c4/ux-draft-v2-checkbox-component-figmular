@@ -1,0 +1,22 @@
+@import "src/app/tokens.scss";
+
+.group-neutral--color-000_9777-6905 {
+  padding: 2px 10px 2px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: $semantic-color-names-borders-border-disabled;
+  border-style: solid;
+  border-width: 1px;
+}
+.text-specification-chip_9777-6906 {
+  color: $semantic-color-names-text-content-secondary;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}

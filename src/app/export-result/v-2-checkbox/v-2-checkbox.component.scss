@@ -1,0 +1,121 @@
+@import "src/app/tokens.scss";
+
+.root {
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+.checkboxIcon {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.checkboxIcon_selectedFalseTypeEnabledStateDefaultTypeDisabledStateHoverTypeError {
+  justify-content: flex-start;
+}
+
+.checkboxIcon_typeEnabledSelectedTrueTypeErrorStatePressedTypeErrorSelectedTrueStateHover {
+  justify-content: center;
+}
+
+.checkboxIcon_statePressedTypeEnabledTypeError {
+  border-color: #0a0a0a;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.checkboxIcon_stateHoverTypeEnabledTypeError {
+  border-color: #0a0a0a;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+.checkbox {
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: $collection-1-radius-sm;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox_typeEnabledSelectedTrue {
+  background: $semantic-color-names-backgrounds-bg-selected;
+}
+
+.checkbox_typeDisabledStateDefault {
+  background: $semantic-color-names-backgrounds-bg-disabled;
+}
+
+.checkbox_typeErrorSelectedTrue {
+  background: $semantic-color-names-backgrounds-bg-error;
+}
+
+.checkbox_typeEnabledSelectedFalse {
+  border-color: #0a0a0a;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.checkbox_typeDisabledSelectedFalseStateDefault {
+  border-color: #918f8f;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.checkbox_typeErrorSelectedFalse {
+  border-color: #960000;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+.vector {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.vector_typeDisabledSelectedFalseStateDefault {
+  display: flex;
+}
+
+.vector_selectedTrueTypeEnabledStateDefaultTypeError {
+  display: flex;
+}
+
+.vector_selectedTrueTypeEnabledTypeError {
+  display: flex;
+}
+
+.vector_typeDisabledSelectedTrueStateDefault {
+  display: flex;
+}
+
+.text {
+  display: flex;
+  box-sizing: content-box;
+  @include v-2-text-styles-body-body-lg-text;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.text_typeEnabled {
+  color: $semantic-color-names-text-content-primary;
+}
+
+.text_typeDisabledStateDefault {
+  color: $semantic-color-names-text-content-disabled;
+}
+
+.text_typeError {
+  color: $semantic-color-names-text-content-error;
+}

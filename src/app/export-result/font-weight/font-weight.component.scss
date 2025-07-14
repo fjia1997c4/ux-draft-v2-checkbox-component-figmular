@@ -1,0 +1,28 @@
+@import "src/app/tokens.scss";
+
+.root {
+  padding: 2px 10px 2px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: #918f8f;
+  border-style: solid;
+  border-width: 1px;
+}
+.specificationChip {
+  display: flex;
+  box-sizing: content-box;
+  color: $semantic-color-names-text-content-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}

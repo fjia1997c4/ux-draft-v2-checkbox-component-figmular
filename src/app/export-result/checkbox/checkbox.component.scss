@@ -1,0 +1,67 @@
+@import "src/app/tokens.scss";
+
+.root {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.root_stateActive {
+  padding: 5px 4px 5px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #70a300;
+}
+
+.root_stateDefaultStateHoverStateFocusStateInactiveStateErrorFocus {
+  overflow: hidden;
+}
+
+.root_stateFocus {
+  box-shadow: 0px 0px 4px 4px #95c03c;
+}
+
+.root_stateErrorFocus {
+  border-color: #960000;
+  border-style: solid;
+  border-width: undefinedpx;
+  box-shadow: 0px 0px 4px 4px #e59999;
+}
+
+.root_stateDefaultStateHoverStateFocusStateErrorFocus {
+  background: #ffffff;
+}
+
+.root_stateInactive {
+  border-color: #959393;
+  border-style: solid;
+  border-width: undefinedpx;
+  background: #d7d7d7;
+}
+
+.root_stateHoverStateFocusStateInactiveStateErrorFocus {
+  position: relative;
+}
+
+.root_stateDefault {
+  padding: 10px;
+  display: flex;
+  border-color: #2b313c;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+
+.root_stateHoverStateFocus {
+  border-color: #70a300;
+  border-style: solid;
+  border-width: undefinedpx;
+}
+.featherIconsCheck {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: -webkit-fill-available;
+  height: 100%;
+}

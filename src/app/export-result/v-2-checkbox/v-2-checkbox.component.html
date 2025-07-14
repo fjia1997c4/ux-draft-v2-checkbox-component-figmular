@@ -1,0 +1,86 @@
+<div class="root">
+  <div
+    class="checkboxIcon"
+    [ngClass]="{
+      checkboxIcon_selectedFalseTypeEnabledStateDefaultTypeDisabledStateHoverTypeError:
+        selected === 'False' ||
+        type === 'Enabled' ||
+        state === 'Default' ||
+        type === 'Disabled' ||
+        state === 'Hover' ||
+        type === 'Error',
+      checkboxIcon_typeEnabledSelectedTrueTypeErrorStatePressedTypeErrorSelectedTrueStateHover:
+        (type === 'Enabled' && selected === 'True') ||
+        (type === 'Error' && state === 'Pressed') ||
+        (type === 'Error' && selected === 'True' && state === 'Hover'),
+      checkboxIcon_statePressedTypeEnabledTypeError:
+        state === 'Pressed' && (type === 'Enabled' || type === 'Error'),
+      checkboxIcon_stateHoverTypeEnabledTypeError:
+        state === 'Hover' && (type === 'Enabled' || type === 'Error'),
+    }"
+  >
+    <div
+      class="checkbox"
+      [ngClass]="{
+        checkbox_typeEnabledSelectedTrue:
+          type === 'Enabled' && selected === 'True',
+        checkbox_typeDisabledStateDefault:
+          type === 'Disabled' && state === 'Default',
+        checkbox_typeErrorSelectedTrue: type === 'Error' && selected === 'True',
+        checkbox_typeEnabledSelectedFalse:
+          type === 'Enabled' && selected === 'False',
+        checkbox_typeDisabledSelectedFalseStateDefault:
+          type === 'Disabled' && selected === 'False' && state === 'Default',
+        checkbox_typeErrorSelectedFalse:
+          type === 'Error' && selected === 'False',
+      }"
+    >
+      <div
+        *ngIf="
+          selected === 'True' ||
+          type === 'Enabled' ||
+          type === 'Disabled' ||
+          state === 'Default' ||
+          type === 'Error'
+        "
+        class="vector"
+        [ngClass]="{
+          vector_typeDisabledSelectedFalseStateDefault:
+            type === 'Disabled' && selected === 'False' && state === 'Default',
+          vector_selectedTrueTypeEnabledStateDefaultTypeError:
+            selected === 'True' &&
+            (type === 'Enabled' || state === 'Default' || type === 'Error'),
+          vector_selectedTrueTypeEnabledTypeError:
+            selected === 'True' && (type === 'Enabled' || type === 'Error'),
+          vector_typeDisabledSelectedTrueStateDefault:
+            type === 'Disabled' && selected === 'True' && state === 'Default',
+        }"
+      >
+        <svg
+          width="12"
+          height="10"
+          viewBox="0 0 12 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2.25L4.5 7.75L2 5.25"
+            stroke="#FCFCFC"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <span
+    class="text"
+    [ngClass]="{
+      text_typeEnabled: type === 'Enabled',
+      text_typeDisabledStateDefault: type === 'Disabled' && state === 'Default',
+      text_typeError: type === 'Error',
+    }"
+    >{{ text }}</span
+  >
+</div>
